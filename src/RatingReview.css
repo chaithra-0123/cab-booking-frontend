@@ -1,0 +1,263 @@
+/* ===== RideEasy: Ratings & Reviews ===== */
+
+.rating-page {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 24px 0 35px;
+    color: var(--ink);
+}
+
+.rating-header {
+    margin: 0 0 25px;
+    padding: 12px 4px 7px;
+}
+
+.rating-header h1 {
+    margin: 12px 0 10px;
+    color: var(--navy);
+    font-size: clamp(30px, 4.3vw, 44px);
+    font-weight: 850;
+    letter-spacing: -1.7px;
+}
+
+.rating-header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.rating-card {
+    padding: 30px;
+    margin-bottom: 25px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+}
+
+.rating-card h2 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+}
+
+.rating-description {
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.rating-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating-form label {
+    margin-top: 10px;
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.rating-form input,
+.rating-form textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid #dfe5ed;
+    border-radius: 12px;
+    background: #fbfcfe;
+    color: var(--ink);
+    font: inherit;
+    font-size: 13px;
+}
+
+.rating-form input {
+    min-height: 49px;
+}
+
+.rating-form textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.rating-form input:focus,
+.rating-form textarea:focus {
+    outline: none;
+    border-color: var(--gold-hover);
+    background: var(--white);
+    box-shadow: 0 0 0 4px rgba(245, 189, 69, 0.18);
+}
+
+.star-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.star-button {
+    padding: 0 3px;
+    border: 0;
+    background: transparent;
+    color: #cbd2dc;
+    font-size: 36px;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.star-button:hover {
+    transform: translateY(-2px);
+}
+
+.star-button.selected {
+    color: var(--gold);
+}
+
+.rating-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.rating-submit-button,
+.rating-load-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 13px 20px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.rating-submit-button {
+    border: 1px solid var(--gold);
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.rating-submit-button:hover {
+    border-color: var(--gold-hover);
+    background: var(--gold-hover);
+    transform: translateY(-1px);
+}
+
+.rating-load-button {
+    border: 1px solid #dfe5ed;
+    background: var(--white);
+    color: var(--navy);
+}
+
+.rating-load-button:hover {
+    background: #f4f6fa;
+}
+
+.rating-submit-button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    transform: none;
+}
+
+.rating-message,
+.rating-error {
+    margin: 14px 0 0;
+    padding: 12px 15px;
+    border-radius: 11px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.rating-message {
+    border: 1px solid #b9e5d0;
+    background: #effaf4;
+    color: var(--green);
+}
+
+.rating-error {
+    border: 1px solid #f2c8c5;
+    background: #fff5f4;
+    color: #b42318;
+}
+
+.rating-review-item {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.rating-review-item:last-child {
+    border-bottom: none;
+}
+
+.rating-review-stars {
+    color: var(--gold-hover);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.rating-review-text {
+    margin: 8px 0;
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.rating-review-meta {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.rating-back-link {
+    display: inline-flex;
+    margin-top: 4px;
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.rating-back-link:hover {
+    color: var(--gold-hover);
+}
+
+/* ===== Responsive layout ===== */
+
+@media (max-width: 760px) {
+    .rating-page {
+        width: calc(100% - 24px);
+        padding-top: 12px;
+    }
+
+    .rating-card {
+        padding: 21px;
+        border-radius: 17px;
+    }
+}
+
+@media (max-width: 420px) {
+    .rating-page {
+        width: calc(100% - 16px);
+    }
+
+    .rating-card {
+        padding: 16px;
+    }
+
+    .rating-actions {
+        flex-direction: column;
+    }
+
+    .rating-actions button {
+        width: 100%;
+    }
+}

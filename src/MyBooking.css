@@ -1,0 +1,286 @@
+/* RideEasy — My Bookings page */
+
+.my-bookings-page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 36px 5%;
+    background: transparent;
+    color: #103B46;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.my-bookings-page * {
+    box-sizing: border-box;
+}
+
+/* Header */
+.bookings-header {
+    margin: 0 auto 28px;
+    max-width: 1100px;
+}
+
+.bookings-eyebrow {
+    color: #174D55;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.bookings-header h1,
+.bookings-header h2 {
+    color: #103B46;
+    font-size: 32px;
+    font-weight: 750;
+    margin: 8px 0 10px;
+}
+
+.bookings-subtitle {
+    color: #315D64;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.booking-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    margin-top: 12px;
+    border-radius: 20px;
+    background: #F5BD45;
+    color: #103B46;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Search and filter area */
+.booking-tools {
+    max-width: 1100px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.booking-tools input,
+.booking-tools select {
+    padding: 12px 14px;
+    border: 1px solid #A8D3D0;
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #103B46;
+    font-size: 15px;
+    outline-color: #258C91;
+}
+
+/* Booking list */
+.booking-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.booking-item {
+    padding: 24px;
+    background: #FFFFFF;
+    border: 1px solid rgba(16, 59, 70, 0.12);
+    border-top: 4px solid #F5BD45;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(16, 59, 70, 0.09);
+    color: #103B46;
+}
+
+.booking-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.booking-label {
+    color: #174D55;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cab-badge {
+    padding: 7px 13px;
+    border-radius: 20px;
+    background: #D8E9A8;
+    color: #103B46;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Pickup and drop route */
+.booking-route {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.route-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+    color: #103B46;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.route-dot {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.pickup-dot {
+    background: #16845B;
+}
+
+.drop-dot {
+    background: #D89A20;
+}
+
+.booking-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    padding-top: 18px;
+    margin-top: 18px;
+    border-top: 1px solid #DCE8E8;
+    color: #315D64;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.booking-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.delete-booking-button {
+    padding: 11px 17px;
+    border: 1px solid #B94B4B;
+    border-radius: 9px;
+    background: #FFFFFF;
+    color: #A52F35;
+    font-size: 14px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.delete-booking-button:hover {
+    background: #FFF0EF;
+}
+
+/* Messages and empty state */
+.bookings-message,
+.bookings-error,
+.bookings-empty {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 24px;
+    border-radius: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.bookings-message {
+    background: #FFFFFF;
+    color: #174D55;
+}
+
+.bookings-error {
+    background: #FFF0EF;
+    color: #A52F35;
+    border: 1px solid #F0C5C2;
+}
+
+.bookings-empty {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(16, 59, 70, 0.12);
+    color: #174D55;
+    text-align: center;
+}
+
+.booking-results-count {
+    max-width: 1100px;
+    margin: 0 auto 14px;
+    color: #174D55;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .my-bookings-page {
+        padding: 24px 16px;
+    }
+
+    .bookings-header h1,
+    .bookings-header h2 {
+        font-size: 27px;
+    }
+
+    .bookings-subtitle {
+        font-size: 15px;
+    }
+
+    .booking-item {
+        padding: 18px;
+    }
+
+    .booking-tools {
+        align-items: stretch;
+    }
+
+    .booking-tools input,
+    .booking-tools select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .booking-details {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.download-receipt-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.download-receipt-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.download-receipt-button:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+    transform: none;
+}

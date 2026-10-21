@@ -1,0 +1,32 @@
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  background: #DCE6F1;
+} */
+/* 
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh !important;
+  background: linear-gradient(120deg,
+      #B8C8F5 0%,
+      #D8B9EE 48%,
+      #FFD6B8 100%) !important;
+}
+
+#root {
+  min-height: 100vh;
+  background: transparent !important;
+} */
+*body {
+  background: linear-gradient(125deg,
+      #8EDCC5 0%,
+      #68B9C9 50%,
+      #D8E9A8 100%) !important;
+}
