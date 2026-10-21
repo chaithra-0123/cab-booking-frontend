@@ -2,161 +2,219 @@
 
 ## 1. Project Introduction
 
-The Cab Booking Platform is a web application that allows users to register, log in, book cabs, manage their bookings, and review their travel experience.
+The Cab Booking Platform is a web application developed to simplify the process of booking and managing cab rides. It provides a user-friendly interface for registration, login, trip planning, vehicle selection, booking confirmation, booking history, receipt downloads, and customer ratings and reviews.
 
-The frontend provides a simple and user-friendly interface for customers to access cab booking features.
+The frontend is developed using React and communicates with backend services to manage application data.
 
 ## 2. Project Research
 
-Traditional cab booking may require users to call drivers or booking services manually. This project aims to simplify the process by providing an online platform where users can select pickup and drop locations, view travel information, book cabs, and manage their booking history.
+Traditional cab booking may require customers to contact drivers or booking services manually. This project aims to make the booking process more convenient by bringing trip planning and booking management together in one application.
+
+The application allows users to:
+
+- Create an account and log in.
+- Enter pickup and drop locations.
+- Select pickup and drop dates and times.
+- Choose a vehicle category.
+- View the route, estimated distance, and travel time.
+- Review the estimated fare and choose a payment method.
+- Confirm bookings and view booking history.
+- Download booking receipts.
+- Submit ratings and reviews and view other users' feedback.
 
 ## 3. Technology Stack and Reasons
 
-- **React.js:** Builds reusable UI components and interactive pages.
-- **JavaScript:** Handles user interactions and application logic.
-- **HTML:** Structures the web pages.
-- **CSS:** Styles the application and improves its appearance.
-- **Vite:** Provides a fast development server and build tool.
-- **Python and FastAPI:** Used for backend services and APIs.
-- **PostgreSQL:** Stores user and booking information.
-- **Git and GitHub:** Used for version control and source code hosting.
+| Technology | Purpose and reason |
+|---|---|
+| React.js | Builds reusable components and interactive user interfaces. |
+| JavaScript | Implements application logic and user interactions. |
+| HTML5 | Structures the web pages. |
+| CSS3 | Styles the application and creates a consistent interface. |
+| Vite | Provides a development server and production build tools. |
+| React Router DOM | Supports navigation between application pages. |
+| Leaflet | Displays interactive maps. |
+| React Leaflet | Integrates map functionality into React components. |
+| Python and FastAPI | Used by the backend to provide API services. |
+| PostgreSQL | Stores user and booking information in the backend. |
+| Git and GitHub | Manage source code and version history. |
 
 ## 4. Libraries and Their Uses
 
-- **React:** Creates interactive user interfaces.
-- **React DOM:** Renders React components in the browser.
-- **Vite:** Runs the development environment and builds the frontend.
-- **Other libraries:** Additional libraries are used for features such as maps, API requests, and PDF receipts, depending on the installed project dependencies.
+### 4.1 React
+
+React is used to create reusable components and interactive application pages.
+
+### 4.2 React DOM
+
+React DOM renders React components in the web browser.
+
+### 4.3 React Router DOM
+
+React Router DOM provides navigation between pages and application sections.
+
+### 4.4 Leaflet
+
+Leaflet provides interactive map functionality for displaying geographic locations and routes.
+
+### 4.5 React Leaflet
+
+React Leaflet connects Leaflet maps with React components.
+
+### 4.6 Vite
+
+Vite provides the frontend development server and builds the application for deployment.
+
+### 4.7 Oxlint
+
+Oxlint is used as a development tool to check source code for potential issues.
 
 ## 5. Application Features
 
-The frontend includes user registration and login, cab booking, location selection, booking management, payment method selection, receipt downloads, and ratings and reviews.
+The main features include user registration, login, OTP verification, pickup and drop selection, trip date and time selection, vehicle selection, route visualization, distance and travel-time information, estimated fare, booking confirmation, payment method selection, booking history, receipt downloads, and ratings and reviews.
 
 ## 6. Screenshots and Feature Explanations
 
 ### 6.1 User Registration
 
-![Registration Page](Screenshot%202026-10-21%20174220.png)
+![User Registration Page](Screenshot%202026-10-21%20174220.png)
 
-Allows new users to create an account by entering the required information.
+The registration page allows new users to create a RideEasy account by entering their full name, email address, phone number, and password.
 
 ### 6.2 User Login
 
-![Login Page](Screenshot%202026-10-21%20174240.png)
+![User Login Page](Screenshot%202026-10-21%20174240.png)
 
-Allows registered users to log in to the application.
+The login page allows registered users to enter their email address and password to access the application. It also displays options for password recovery and registration.
 
-### 6.3 Pickup and Drop Location
+### 6.3 OTP Verification
 
-![Pickup and Drop Location](Screenshot%202026-10-21%20174307.png)
+![OTP Verification Page](Screenshot%202026-10-21%20174307.png)
 
-Allows users to select their pickup and destination locations.
+This page allows users to enter their email address and six-digit OTP. It displays a verification countdown and a button to verify the code.
 
-### 6.4 Cab Booking
+### 6.4 Pickup and Drop Locations
 
-![Cab Booking](Screenshot%202026-10-21%20174407.png)
+![Pickup and Drop Location Form](Screenshot%202026-10-21%20174407.png)
 
-Allows users to enter trip details and book a cab.
+The trip-planning section allows users to enter their pickup and destination locations. Users can use the Search buttons and select pickup and drop dates and times.
 
-### 6.5 Distance and Travel Time
+### 6.5 Vehicle Selection
 
-![Distance and Travel Time](Screenshot%202026-10-21%20174426.png)
-Displays the calculated travel distance and estimated travel time.
+![Vehicle Selection](Screenshot%202026-10-21%20174453.png)
 
-### 6.6 Booking Confirmation
+The application displays three vehicle categories: Hatchback, Sedan, and SUV. Each option includes a short description and a selection control so users can choose a suitable vehicle.
 
+### 6.6 Route Map, Distance, and Travel Time
 
-![Booking Confirmation](Screenshot%202026-10-21%20174436.png)
+![Route Overview Map](Screenshot%202026-10-21%20174701.png)
 
-Displays a confirmation message after a booking is completed.
+The route overview displays pickup and destination markers connected by a route on an interactive map. It also shows the estimated travel distance and travel time.
 
-### 6.7 Payment Method
+### 6.7 Trip Review and Payment Method
 
-![Payment Method](Screenshot%202026-10-21%20174453.png)
+![Trip Review and Payment Selection](Screenshot%202026-10-21%20174610.png)
 
+Before confirming the booking, users can review their pickup and destination details, pickup and drop times, selected vehicle, estimated distance, and estimated fare. The screen also provides Cash and UPI payment options and shows the payment status.
 
-Allows users to select an available payment method, such as cash on delivery.
+### 6.8 Booking Confirmation
 
-### 6.8 Booking History
+![Successful Booking Confirmation](Screenshot%202026-10-21%20174634.png)
 
-![Booking History](Screenshot%202026-10-21%20174550.png)
-Allows users to view their previous bookings.
+After a successful booking, the application displays a confirmation message and booking reference. It also shows the selected vehicle, cab assignment information, pickup time, and trip locations.
 
-### 6.9 Edit and Manage Bookings
+### 6.9 My Bookings — Booking History
 
-![Manage Bookings](Screenshot%202026-10-21%20174610.png)
+![My Bookings Page](Screenshot%202026-10-21%20174731.png)
 
+The booking history page displays existing bookings and their details, including booking ID, pickup and drop locations, cab type, pickup and drop times, estimated fare, payment method, and payment status. Users can search bookings, filter by cab type, sort the records, and access available actions.
 
-Allows users to manage or update bookings where the feature is available.
+### 6.10 Delete Booking Confirmation
 
-### 6.10 Download Receipt
+![Delete Booking Confirmation](Screenshot%202026-10-21%20174808.png)
 
-![Download Receipt](Screenshot%202026-10-21%20174634.png)
+When a user selects Delete Booking, the application displays a confirmation dialog asking whether the booking should be deleted. This gives users a chance to cancel the action before proceeding.
 
+### 6.11 Download Booking Receipt
 
-Allows users to download a receipt for a booking.
+![Booking Receipt Download](Screenshot%202026-10-21%20174836.png)
 
-### 6.11 Rating and Review
+The booking history includes a Download Receipt button. The screenshot shows a receipt PDF being downloaded, demonstrating the receipt-download functionality.
 
-![Rating and Review](Screenshot%202026-10-21%20174701.png)
+### 6.12 Submit Rating and Review
 
-Allows users to submit ratings and reviews about their cab booking experience.
+![Submit Rating and Review](Screenshot%202026-10-21%20174920.png)
 
-### 6.12 View Other Users' Reviews
+The Ratings & Reviews page allows users to enter a ride ID, select a star rating, write their feedback, and submit their review. A View Reviews button is also available.
 
+### 6.13 View Other Users' Reviews
 
-![View Other Users' Reviews](Screenshot%202026-10-21%20174731.png)
+![View Customer Reviews](Screenshot%202026-10-21%20174959.png)
 
-Allows users to view ratings and reviews submitted by other users.
+The customer reviews section displays submitted star ratings, written feedback, and a ride reference. This allows users to view feedback shared by other customers.
 
 ## 7. Project Structure
 
-The frontend source code is organized into components, pages, assets, and configuration files.
+The frontend repository contains the React source code, public assets, configuration files, and dependency information.
 
-- `src/` — React application source code.
-- `src/assets/` — Images and other assets.
-- `package.json` — Project dependencies and scripts.
-- `index.html` — Main HTML entry point.
-- `vite.config.js` — Vite configuration.
+- `src/` — Contains the application source code and React components.
+- `public/` — Contains public assets.
+- `package.json` — Lists project dependencies and scripts.
+- `package-lock.json` — Records the installed dependency versions.
+- `index.html` — Provides the main HTML entry point.
+- `vite.config.js` — Contains the Vite configuration.
+- `.gitignore` — Specifies files that Git should ignore.
 
 ## 8. How to Run the Frontend
 
 ### Prerequisites
 
-- Node.js and npm
+- Node.js
+- npm
 - Git
 
-### Steps
+### Installation
 
-1. Clone the repository:
+**Step 1: Clone the repository**
 
-   `git clone https://github.com/chaithra-0123/cab-booking-frontend.git`
+```bash
+git clone https://github.com/chaithra-0123/cab-booking-frontend.git
+```
 
-2. Open the project directory:
+**Step 2: Open the project directory**
 
-   `cd cab-booking-frontend`
+```bash
+cd cab-booking-frontend
+```
 
-3. Install dependencies:
+**Step 3: Install dependencies**
 
-   `npm install`
+```bash
+npm install
+```
 
-4. Start the development server:
+**Step 4: Start the development server**
 
-   `npm run dev`
+```bash
+npm run dev
+```
 
-5. Open the local URL displayed in the terminal.
+**Step 5: Open the local URL**
+
+Open the URL displayed in the terminal in your web browser.
 
 ## 9. Backend Integration
 
-The frontend communicates with the backend API to handle user authentication, cab booking, and booking-related data. The backend uses Python, FastAPI, and PostgreSQL.
+The frontend communicates with the backend API for application functionality and data management.
+
+The backend uses Python, FastAPI, and PostgreSQL. The frontend and backend are maintained in separate GitHub repositories.
 
 ## 10. Future Enhancements
 
-- Real-time cab tracking.
-- Driver assignment and driver dashboard.
+- Real-time driver tracking.
+- Automatic driver assignment and a driver dashboard.
 - Online payment gateway integration.
-- Booking notifications.
+- Booking status notifications.
 
 ## 11. Conclusion
 
-The Cab Booking Platform provides a convenient interface for booking cabs and managing travel information. The project demonstrates the use of React and related frontend technologies to build an interactive web application.
+The Cab Booking Platform provides a convenient interface for planning trips, selecting vehicles, managing bookings, downloading receipts, and sharing customer feedback. The project demonstrates the use of React, JavaScript, map libraries, and backend API integration in developing a cab booking application.
