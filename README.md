@@ -42,67 +42,70 @@ Allows new users to create an account by entering the required information.
 
 ### 6.2 User Login
 
-![Login Page](Screenshot%2026-10-21%174240.png)
+![Login Page](Screenshot%202026-10-21%20174240.png)
 
 Allows registered users to log in to the application.
 
 ### 6.3 Pickup and Drop Location
 
-![Pickup and Drop Location](Screenshot%2026-10-21%174407.png)
+![Pickup and Drop Location](Screenshot%202026-10-21%20174307.png)
 
 Allows users to select their pickup and destination locations.
 
 ### 6.4 Cab Booking
 
-![Cab Booking](‎Screenshot%2026-10-21%174731.png)
+![Cab Booking](Screenshot%202026-10-21%20174407.png)
 
 Allows users to enter trip details and book a cab.
 
 ### 6.5 Distance and Travel Time
 
-![Distance and Travel Time](‎Screenshot%2026-10-21%174701.png)
-
+![Distance and Travel Time](Screenshot%202026-10-21%20174426.png)
 Displays the calculated travel distance and estimated travel time.
 
 ### 6.6 Booking Confirmation
 
-![Booking Confirmation](Screenshot%2026-10-21%174634.png)
+
+![Booking Confirmation](Screenshot%202026-10-21%20174436.png)
 
 Displays a confirmation message after a booking is completed.
 
 ### 6.7 Payment Method
 
-![Payment Method](Screenshot%2026-10-21%174610.png)
+![Payment Method](Screenshot%202026-10-21%20174453.png)
+
 
 Allows users to select an available payment method, such as cash on delivery.
 
 ### 6.8 Booking History
 
-![Booking History](‎Screenshot%2026-10-21%174731.png)
-
+![Booking History](Screenshot%202026-10-21%20174550.png)
 Allows users to view their previous bookings.
 
 ### 6.9 Edit and Manage Bookings
 
-![Manage Bookings](Screenshot%2026-10-21%174610.png)
+![Manage Bookings](Screenshot%202026-10-21%20174610.png)
+
 
 Allows users to manage or update bookings where the feature is available.
 
 ### 6.10 Download Receipt
 
-![Download Receipt](‎Screenshot%2026-10-21%174836.png)
+![Download Receipt](Screenshot%202026-10-21%20174634.png)
+
 
 Allows users to download a receipt for a booking.
 
 ### 6.11 Rating and Review
 
-![Rating and Review](‎Screenshot%2026-10-21%174920.png)
+![Rating and Review](Screenshot%202026-10-21%20174701.png)
 
 Allows users to submit ratings and reviews about their cab booking experience.
 
 ### 6.12 View Other Users' Reviews
 
-![View Other Users' Reviews](‎Screenshot%2026-10-21%174959.png)
+
+![View Other Users' Reviews](Screenshot%202026-10-21%20174731.png)
 
 Allows users to view ratings and reviews submitted by other users.
 
